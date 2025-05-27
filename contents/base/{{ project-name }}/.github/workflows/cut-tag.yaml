@@ -19,6 +19,9 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{'{'}}{ steps.cut-tag.outputs.version }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
