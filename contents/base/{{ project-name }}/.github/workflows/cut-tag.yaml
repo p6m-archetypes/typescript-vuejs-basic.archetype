@@ -61,7 +61,7 @@ jobs:
       # linux-arm-runner: ubuntu-24.04-arm-provisioned
 
     secrets:
-      username: ${{'{'}}{ vars.ARTIFACTORY_USERNAME }}
+      username: ${{'{'}}{ secrets.ARTIFACTORY_USERNAME }}
       password: ${{'{'}}{ secrets.ARTIFACTORY_IDENTITY_TOKEN }}
       secrets: |
         artifactory-token=${{'{'}}{ secrets.ARTIFACTORY_TOKEN }}
