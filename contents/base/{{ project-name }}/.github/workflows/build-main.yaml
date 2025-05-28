@@ -3,6 +3,7 @@ name: Build Main
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: write # Required for pushing tags
@@ -60,6 +61,7 @@ jobs:
   trigger-cd:
     name: Trigger CD
     runs-on: ubuntu-latest
+    if: ${{'{'}}{ github.ref_name == 'main' }}
     needs:
       - docker-build
 
