@@ -40,7 +40,7 @@ jobs:
 
     with:
       registry: ${{'{'}}{ vars.ARTIFACTORY_HOSTNAME }}
-      image-name: '{{ organization-name }}-docker/applications/{{ project-name }}'
+      image-name: '{{ organization-name }}-docker/applications/{{ project-name }}-server'
       context: "."
       dockerfile: ./Dockerfile
       tags: |
@@ -72,7 +72,7 @@ jobs:
         uses: p6m-actions/platform-application-manifest-dispatch@v1
         with:
           repository: ${{'{'}}{ github.repository }}
-          image-name: ${{'{'}}{ env.GITHUB_REPOSITORY_BASENAME }}-server
+          image-name: ${{'{'}}{ env.GITHUB_REPOSITORY_BASENAME }}
           directory-name: ${{'{'}}{ env.GITHUB_REPOSITORY_BASENAME }}
           environment: "dev"
           digest: ${{'{'}}{ needs.docker-build.outputs.digest }}
