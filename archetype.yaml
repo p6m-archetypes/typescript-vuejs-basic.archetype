@@ -1,9 +1,9 @@
 ---
-description: "TypeScript VueJS Basic"
-authors: ["Jimmie Fulton <jimmie@ybor.ai>, Jose Pimienta <jose@ybor.ai"]
-languages: []
-frameworks: []
-tags: []
+description: "TypeScript VueJS Frontend"
+authors: ["Ybor Technology"]
+languages: ["TypeScript"]
+frameworks: ["VueJS"]
+tags: ["Frontend", "VueJS"]
 
 requires:
   archetect: "2.0.0"
