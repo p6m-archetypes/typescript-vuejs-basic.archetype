@@ -56,6 +56,13 @@ Ideal for:
 3. **Component Libraries**: Reusable Vue component packages
 4. **Progressive Enhancement**: Incrementally adopt Vue in existing projects
 
+## 🔌 Backend Integration
+
+Typically consumes:
+- **GraphQL APIs**: Unified gateway with flexible queries
+- **REST APIs**: Traditional HTTP/JSON services
+- **BFF Services**: Dedicated backend for this frontend
+
 ## 🔗 Related
 
 - **[TypeScript Nuxt.js](../typescript-nuxtjs-basic.archetype)** - Vue with SSR
