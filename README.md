@@ -35,7 +35,7 @@ Access at: http://localhost:5173
 
 | Property | Description | Example |
 |----------|-------------|---------|
-| `organization-name` | GitHub organization or username | acme-inc |
+| `org-name` | GitHub organization or username | acme-inc |
 | `project-title` | Application name | Customer Portal |
 | `project-prefix` | Project identifier (suffix '-frontend' added automatically) | customer |
 
